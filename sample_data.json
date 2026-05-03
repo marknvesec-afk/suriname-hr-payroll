@@ -1,0 +1,125 @@
+{
+  "employees": [
+    {
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john.doe@company.com",
+      "gender": "Male",
+      "date_of_birth": "1990-05-15",
+      "company": "My Company Ltd",
+      "designation": "Manager",
+      "department": "Operations",
+      "date_of_joining": "2020-01-15",
+      "status": "Active",
+      "ctc": "180000"
+    },
+    {
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "email": "jane.smith@company.com",
+      "gender": "Female",
+      "date_of_birth": "1992-08-22",
+      "company": "My Company Ltd",
+      "designation": "Supervisor",
+      "department": "Operations",
+      "date_of_joining": "2021-03-10",
+      "status": "Active",
+      "ctc": "120000"
+    },
+    {
+      "first_name": "Michael",
+      "last_name": "Johnson",
+      "email": "michael.johnson@company.com",
+      "gender": "Male",
+      "date_of_birth": "1988-12-03",
+      "company": "My Company Ltd",
+      "designation": "Operator",
+      "department": "Operations",
+      "date_of_joining": "2019-07-20",
+      "status": "Active",
+      "ctc": "70000"
+    },
+    {
+      "first_name": "Sarah",
+      "last_name": "Williams",
+      "email": "sarah.williams@company.com",
+      "gender": "Female",
+      "date_of_birth": "1995-03-18",
+      "company": "My Company Ltd",
+      "designation": "Admin",
+      "department": "HR",
+      "date_of_joining": "2022-01-05",
+      "status": "Active",
+      "ctc": "85000"
+    },
+    {
+      "first_name": "Robert",
+      "last_name": "Brown",
+      "email": "robert.brown@company.com",
+      "gender": "Male",
+      "date_of_birth": "1991-06-28",
+      "company": "My Company Ltd",
+      "designation": "Support Staff",
+      "department": "IT",
+      "date_of_joining": "2021-11-15",
+      "status": "Active",
+      "ctc": "60000"
+    }
+  ],
+  "designations": [
+    {"name": "Manager", "description": "Management Level Position"},
+    {"name": "Supervisor", "description": "Supervisory Level Position"},
+    {"name": "Operator", "description": "Operations Staff"},
+    {"name": "Admin", "description": "Administrative Staff"},
+    {"name": "Support Staff", "description": "Support Level Staff"}
+  ],
+  "departments": [
+    {"name": "Operations", "description": "Operations Department"},
+    {"name": "Finance", "description": "Finance Department"},
+    {"name": "HR", "description": "Human Resources Department"},
+    {"name": "IT", "description": "Information Technology Department"},
+    {"name": "Sales", "description": "Sales Department"},
+    {"name": "Marketing", "description": "Marketing Department"}
+  ],
+  "salary_structures": [
+    {
+      "name": "Manager - 2026",
+      "doctype": "Salary Structure",
+      "company": "My Company Ltd",
+      "payroll_frequency": "Monthly",
+      "is_active": "Yes",
+      "salary_components": [
+        {"salary_component": "Basic", "amount": 20000},
+        {"salary_component": "Housing", "amount": 3000},
+        {"salary_component": "Transport", "amount": 1500},
+        {"salary_component": "Meal", "amount": 500}
+      ]
+    },
+    {
+      "name": "Supervisor - 2026",
+      "doctype": "Salary Structure",
+      "company": "My Company Ltd",
+      "payroll_frequency": "Monthly",
+      "is_active": "Yes",
+      "salary_components": [
+        {"salary_component": "Basic", "amount": 15000},
+        {"salary_component": "Housing", "amount": 2000},
+        {"salary_component": "Transport", "amount": 1000},
+        {"salary_component": "Meal", "amount": 350}
+      ]
+    },
+    {
+      "name": "Operator - 2026",
+      "doctype": "Salary Structure",
+      "company": "My Company Ltd",
+      "payroll_frequency": "Monthly",
+      "is_active": "Yes",
+      "salary_components": [
+        {"salary_component": "Basic", "amount": 10000},
+        {"salary_component": "Housing", "amount": 1500},
+        {"salary_component": "Transport", "amount": 800},
+        {"salary_component": "Meal", "amount": 250}
+      ]
+    }
+  ]
+}
