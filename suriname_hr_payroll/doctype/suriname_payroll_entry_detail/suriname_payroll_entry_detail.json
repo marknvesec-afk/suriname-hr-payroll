@@ -1,0 +1,98 @@
+{
+  "creation": "2026-05-03",
+  "doctype": "DocType",
+  "document_type": "Child",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "employee",
+    "employee_name",
+    "designation",
+    "column_break_4",
+    "gross_salary",
+    "income_tax",
+    "employee_social_security",
+    "net_pay",
+    "column_break_8",
+    "employer_contribution",
+    "overtime_hours",
+    "overtime_amount"
+  ],
+  "fields": [
+    {
+      "fieldname": "employee",
+      "fieldtype": "Link",
+      "label": "Employee",
+      "options": "Employee",
+      "reqd": 1
+    },
+    {
+      "fieldname": "employee_name",
+      "fieldtype": "Data",
+      "label": "Employee Name",
+      "read_only": 1
+    },
+    {
+      "fieldname": "designation",
+      "fieldtype": "Link",
+      "label": "Designation",
+      "options": "Designation",
+      "read_only": 1
+    },
+    {
+      "fieldname": "column_break_4",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "gross_salary",
+      "fieldtype": "Currency",
+      "label": "Gross Salary (SRD)",
+      "reqd": 1
+    },
+    {
+      "fieldname": "income_tax",
+      "fieldtype": "Currency",
+      "label": "Income Tax (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "employee_social_security",
+      "fieldtype": "Currency",
+      "label": "Employee SS (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "net_pay",
+      "fieldtype": "Currency",
+      "label": "Net Pay (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "column_break_8",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "employer_contribution",
+      "fieldtype": "Currency",
+      "label": "Employer SS (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "overtime_hours",
+      "fieldtype": "Float",
+      "label": "Overtime Hours"
+    },
+    {
+      "fieldname": "overtime_amount",
+      "fieldtype": "Currency",
+      "label": "Overtime Amount (SRD)",
+      "read_only": 1
+    }
+  ],
+  "istable": 1,
+  "modified": "2026-05-03",
+  "modified_by": "Administrator",
+  "module": "Suriname HR/Payroll",
+  "name": "Suriname Payroll Entry Detail",
+  "owner": "Administrator"
+}

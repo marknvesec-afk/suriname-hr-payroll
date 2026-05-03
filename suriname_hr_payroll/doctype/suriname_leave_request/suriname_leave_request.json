@@ -1,0 +1,165 @@
+{
+  "autoname": "format:SURINLEAVE-{MM}-{YYYY}-{employee}-{#####}",
+  "creation": "2026-05-03",
+  "doctype": "DocType",
+  "document_type": "Document",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "employee",
+    "employee_name",
+    "column_break_4",
+    "leave_type",
+    "status",
+    "section_break_dates",
+    "from_date",
+    "to_date",
+    "number_of_days",
+    "column_break_balance",
+    "opening_balance",
+    "days_used",
+    "closing_balance",
+    "section_break_compliance",
+    "leave_category",
+    "is_paid_leave",
+    "approval_status",
+    "notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "employee",
+      "fieldtype": "Link",
+      "label": "Employee",
+      "options": "Employee",
+      "reqd": 1,
+      "read_only": 1
+    },
+    {
+      "fieldname": "employee_name",
+      "fieldtype": "Data",
+      "label": "Employee Name",
+      "read_only": 1
+    },
+    {
+      "fieldname": "column_break_4",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "leave_type",
+      "fieldtype": "Select",
+      "label": "Leave Type",
+      "options": "Annual\nSick\nMaternity\nPaternity\nUnpaid\nSpecial",
+      "reqd": 1
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Pending\nApproved\nRejected\nCancelled",
+      "default": "Pending"
+    },
+    {
+      "fieldname": "section_break_dates",
+      "fieldtype": "Section Break",
+      "label": "Leave Period"
+    },
+    {
+      "fieldname": "from_date",
+      "fieldtype": "Date",
+      "label": "From Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "to_date",
+      "fieldtype": "Date",
+      "label": "To Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "number_of_days",
+      "fieldtype": "Float",
+      "label": "Number of Days",
+      "read_only": 1
+    },
+    {
+      "fieldname": "column_break_balance",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "opening_balance",
+      "fieldtype": "Float",
+      "label": "Opening Balance (Days)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "days_used",
+      "fieldtype": "Float",
+      "label": "Days Used",
+      "read_only": 1
+    },
+    {
+      "fieldname": "closing_balance",
+      "fieldtype": "Float",
+      "label": "Closing Balance (Days)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_break_compliance",
+      "fieldtype": "Section Break",
+      "label": "Compliance"
+    },
+    {
+      "fieldname": "leave_category",
+      "fieldtype": "Data",
+      "label": "Suriname Leave Category",
+      "options": "Vacation\nMedical\nMaternity\nBirth\nPaid\nUnpaid"
+    },
+    {
+      "fieldname": "is_paid_leave",
+      "fieldtype": "Check",
+      "label": "Is Paid Leave",
+      "default": 1
+    },
+    {
+      "fieldname": "approval_status",
+      "fieldtype": "Select",
+      "label": "Approval Status",
+      "options": "Pending Manager\nPending HR\nApproved\nRejected",
+      "default": "Pending Manager"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Text Editor",
+      "label": "Notes"
+    }
+  ],
+  "modified": "2026-05-03",
+  "modified_by": "Administrator",
+  "module": "Suriname HR/Payroll",
+  "name": "Suriname Leave Request",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "HR Manager",
+      "share": 1,
+      "submit": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "delete": 1,
+      "read": 1,
+      "role": "Employee",
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

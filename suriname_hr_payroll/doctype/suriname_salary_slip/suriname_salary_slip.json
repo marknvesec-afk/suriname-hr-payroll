@@ -1,0 +1,229 @@
+{
+  "autoname": "format:SURINSLIP-{MM}-{YYYY}-{employee}-{#####}",
+  "creation": "2026-05-03",
+  "doctype": "DocType",
+  "document_type": "Document",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "employee",
+    "employee_name",
+    "designation",
+    "column_break_4",
+    "salary_month",
+    "salary_year",
+    "posting_date",
+    "section_break_earnings",
+    "basic_salary",
+    "allowances",
+    "overtime_hours",
+    "overtime_amount",
+    "column_break_earnings",
+    "bonus",
+    "total_earnings",
+    "section_break_deductions",
+    "income_tax",
+    "employee_social_security",
+    "other_deductions",
+    "column_break_deductions",
+    "total_deductions",
+    "section_break_net",
+    "gross_salary",
+    "net_pay",
+    "employer_social_security",
+    "total_cost",
+    "section_break_compliance",
+    "leave_balance",
+    "notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "employee",
+      "fieldtype": "Link",
+      "label": "Employee",
+      "options": "Employee",
+      "reqd": 1,
+      "read_only": 1
+    },
+    {
+      "fieldname": "employee_name",
+      "fieldtype": "Data",
+      "label": "Employee Name",
+      "read_only": 1
+    },
+    {
+      "fieldname": "designation",
+      "fieldtype": "Link",
+      "label": "Designation",
+      "options": "Designation",
+      "read_only": 1
+    },
+    {
+      "fieldname": "column_break_4",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "salary_month",
+      "fieldtype": "Select",
+      "label": "Salary Month",
+      "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember",
+      "reqd": 1
+    },
+    {
+      "fieldname": "salary_year",
+      "fieldtype": "Int",
+      "label": "Salary Year",
+      "reqd": 1
+    },
+    {
+      "fieldname": "posting_date",
+      "fieldtype": "Date",
+      "label": "Posting Date",
+      "default": "Today"
+    },
+    {
+      "fieldname": "section_break_earnings",
+      "fieldtype": "Section Break",
+      "label": "Earnings"
+    },
+    {
+      "fieldname": "basic_salary",
+      "fieldtype": "Currency",
+      "label": "Basic Salary (SRD)",
+      "reqd": 1
+    },
+    {
+      "fieldname": "allowances",
+      "fieldtype": "Currency",
+      "label": "Allowances (SRD)"
+    },
+    {
+      "fieldname": "overtime_hours",
+      "fieldtype": "Float",
+      "label": "Overtime Hours"
+    },
+    {
+      "fieldname": "overtime_amount",
+      "fieldtype": "Currency",
+      "label": "Overtime Amount (SRD)"
+    },
+    {
+      "fieldname": "column_break_earnings",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "bonus",
+      "fieldtype": "Currency",
+      "label": "Bonus/Incentives (SRD)"
+    },
+    {
+      "fieldname": "total_earnings",
+      "fieldtype": "Currency",
+      "label": "Total Earnings (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_break_deductions",
+      "fieldtype": "Section Break",
+      "label": "Deductions"
+    },
+    {
+      "fieldname": "income_tax",
+      "fieldtype": "Currency",
+      "label": "Income Tax (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "employee_social_security",
+      "fieldtype": "Currency",
+      "label": "Employee Social Security (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "other_deductions",
+      "fieldtype": "Currency",
+      "label": "Other Deductions (SRD)"
+    },
+    {
+      "fieldname": "column_break_deductions",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "total_deductions",
+      "fieldtype": "Currency",
+      "label": "Total Deductions (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_break_net",
+      "fieldtype": "Section Break",
+      "label": "Net Pay"
+    },
+    {
+      "fieldname": "gross_salary",
+      "fieldtype": "Currency",
+      "label": "Gross Salary (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "net_pay",
+      "fieldtype": "Currency",
+      "label": "Net Pay (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "employer_social_security",
+      "fieldtype": "Currency",
+      "label": "Employer Social Security (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "total_cost",
+      "fieldtype": "Currency",
+      "label": "Total Cost to Company (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_break_compliance",
+      "fieldtype": "Section Break",
+      "label": "Compliance"
+    },
+    {
+      "fieldname": "leave_balance",
+      "fieldtype": "Int",
+      "label": "Leave Balance (Days)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Text Editor",
+      "label": "Notes"
+    }
+  ],
+  "modified": "2026-05-03",
+  "modified_by": "Administrator",
+  "module": "Suriname HR/Payroll",
+  "name": "Suriname Salary Slip",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "HR Manager",
+      "share": 1,
+      "submit": 1,
+      "write": 1
+    },
+    {
+      "read": 1,
+      "role": "Employee"
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

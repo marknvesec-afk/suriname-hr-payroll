@@ -1,0 +1,62 @@
+{
+  "creation": "2026-05-03",
+  "doctype": "DocType",
+  "document_type": "Child",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "employee",
+    "employee_name",
+    "column_break_4",
+    "has_dependents",
+    "number_of_dependents",
+    "fvo_amount",
+    "notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "employee",
+      "fieldtype": "Link",
+      "label": "Employee",
+      "options": "Employee",
+      "reqd": 1
+    },
+    {
+      "fieldname": "employee_name",
+      "fieldtype": "Data",
+      "label": "Employee Name",
+      "read_only": 1
+    },
+    {
+      "fieldname": "column_break_4",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "has_dependents",
+      "fieldtype": "Check",
+      "label": "Has Dependents",
+      "reqd": 1
+    },
+    {
+      "fieldname": "number_of_dependents",
+      "fieldtype": "Int",
+      "label": "Number of Dependents"
+    },
+    {
+      "fieldname": "fvo_amount",
+      "fieldtype": "Currency",
+      "label": "FVO Amount (SRD)"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Small Text",
+      "label": "Notes"
+    }
+  ],
+  "istable": 1,
+  "modified": "2026-05-03",
+  "modified_by": "Administrator",
+  "module": "Suriname HR/Payroll",
+  "name": "FVO Declaration Detail",
+  "owner": "Administrator"
+}

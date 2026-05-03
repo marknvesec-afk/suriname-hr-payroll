@@ -1,0 +1,95 @@
+{
+  "autoname": "format:SURINEMP-{MM}-{YYYY}-{#####}",
+  "creation": "2026-05-03",
+  "doctype": "DocType",
+  "document_type": "Document",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "month",
+    "year",
+    "company",
+    "column_break_4",
+    "posting_date",
+    "attendance_date_from",
+    "attendance_date_to",
+    "section_break_employees",
+    "employees"
+  ],
+  "fields": [
+    {
+      "fieldname": "month",
+      "fieldtype": "Select",
+      "label": "Month",
+      "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember",
+      "reqd": 1
+    },
+    {
+      "fieldname": "year",
+      "fieldtype": "Int",
+      "label": "Year",
+      "reqd": 1
+    },
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Company",
+      "options": "Company",
+      "reqd": 1
+    },
+    {
+      "fieldname": "column_break_4",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "posting_date",
+      "fieldtype": "Date",
+      "label": "Posting Date",
+      "default": "Today"
+    },
+    {
+      "fieldname": "attendance_date_from",
+      "fieldtype": "Date",
+      "label": "Attendance From Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "attendance_date_to",
+      "fieldtype": "Date",
+      "label": "Attendance To Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "section_break_employees",
+      "fieldtype": "Section Break",
+      "label": "Employee Attendance"
+    },
+    {
+      "fieldname": "employees",
+      "fieldtype": "Table",
+      "label": "Employees",
+      "options": "Attendance Integration Detail"
+    }
+  ],
+  "modified": "2026-05-03",
+  "modified_by": "Administrator",
+  "module": "Suriname HR/Payroll",
+  "name": "Attendance Integration",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "HR Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

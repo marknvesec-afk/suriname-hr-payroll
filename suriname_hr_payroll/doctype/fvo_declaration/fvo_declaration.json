@@ -1,0 +1,123 @@
+{
+  "autoname": "format:SURINFVO-{MM}-{YYYY}-{#####}",
+  "creation": "2026-05-03",
+  "doctype": "DocType",
+  "document_type": "Document",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "declaration_month",
+    "declaration_year",
+    "company",
+    "column_break_4",
+    "posting_date",
+    "status",
+    "section_break_employees",
+    "employees",
+    "section_break_summary",
+    "total_employees_with_dependents",
+    "total_fvo_amount",
+    "submission_date",
+    "file_number"
+  ],
+  "fields": [
+    {
+      "fieldname": "declaration_month",
+      "fieldtype": "Select",
+      "label": "Declaration Month",
+      "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember",
+      "reqd": 1
+    },
+    {
+      "fieldname": "declaration_year",
+      "fieldtype": "Int",
+      "label": "Declaration Year",
+      "reqd": 1
+    },
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Company",
+      "options": "Company",
+      "reqd": 1
+    },
+    {
+      "fieldname": "column_break_4",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "posting_date",
+      "fieldtype": "Date",
+      "label": "Posting Date",
+      "default": "Today"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Draft\nSubmitted\nFiled\nRejected",
+      "default": "Draft",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_break_employees",
+      "fieldtype": "Section Break",
+      "label": "Employees with Dependents"
+    },
+    {
+      "fieldname": "employees",
+      "fieldtype": "Table",
+      "label": "FVO Declaration Details",
+      "options": "FVO Declaration Detail"
+    },
+    {
+      "fieldname": "section_break_summary",
+      "fieldtype": "Section Break",
+      "label": "Declaration Summary"
+    },
+    {
+      "fieldname": "total_employees_with_dependents",
+      "fieldtype": "Int",
+      "label": "Total Employees with Dependents",
+      "read_only": 1
+    },
+    {
+      "fieldname": "total_fvo_amount",
+      "fieldtype": "Currency",
+      "label": "Total FVO Amount (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "submission_date",
+      "fieldtype": "Date",
+      "label": "Submission Date to Authority"
+    },
+    {
+      "fieldname": "file_number",
+      "fieldtype": "Data",
+      "label": "Government File Number"
+    }
+  ],
+  "modified": "2026-05-03",
+  "modified_by": "Administrator",
+  "module": "Suriname HR/Payroll",
+  "name": "FVO Declaration",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "HR Manager",
+      "share": 1,
+      "submit": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

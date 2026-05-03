@@ -1,0 +1,157 @@
+{
+  "autoname": "format:SURINPAY-{MM}-{YYYY}-{#####}",
+  "creation": "2026-05-03",
+  "doctype": "DocType",
+  "document_type": "Document",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "processing_month",
+    "processing_year",
+    "company",
+    "column_break_4",
+    "posting_date",
+    "status",
+    "section_break_employees",
+    "employees",
+    "section_break_summary",
+    "total_employees",
+    "total_gross_salary",
+    "total_income_tax",
+    "total_social_security",
+    "total_employer_contribution",
+    "column_break_summary",
+    "total_net_pay",
+    "section_break_notes",
+    "remarks"
+  ],
+  "fields": [
+    {
+      "fieldname": "processing_month",
+      "fieldtype": "Select",
+      "label": "Processing Month",
+      "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember",
+      "reqd": 1
+    },
+    {
+      "fieldname": "processing_year",
+      "fieldtype": "Int",
+      "label": "Processing Year",
+      "reqd": 1
+    },
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Company",
+      "options": "Company",
+      "reqd": 1
+    },
+    {
+      "fieldname": "column_break_4",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "posting_date",
+      "fieldtype": "Date",
+      "label": "Posting Date",
+      "default": "Today"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Draft\nProcessing\nCompleted\nCancelled",
+      "default": "Draft",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_break_employees",
+      "fieldtype": "Section Break",
+      "label": "Employees"
+    },
+    {
+      "fieldname": "employees",
+      "fieldtype": "Table",
+      "label": "Employee Payroll",
+      "options": "Suriname Payroll Entry Detail"
+    },
+    {
+      "fieldname": "section_break_summary",
+      "fieldtype": "Section Break",
+      "label": "Payroll Summary"
+    },
+    {
+      "fieldname": "total_employees",
+      "fieldtype": "Int",
+      "label": "Total Employees",
+      "read_only": 1
+    },
+    {
+      "fieldname": "total_gross_salary",
+      "fieldtype": "Currency",
+      "label": "Total Gross Salary (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "total_income_tax",
+      "fieldtype": "Currency",
+      "label": "Total Income Tax (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "total_social_security",
+      "fieldtype": "Currency",
+      "label": "Total Employee SS (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "total_employer_contribution",
+      "fieldtype": "Currency",
+      "label": "Total Employer SS (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "column_break_summary",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "total_net_pay",
+      "fieldtype": "Currency",
+      "label": "Total Net Pay (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_break_notes",
+      "fieldtype": "Section Break",
+      "label": "Notes"
+    },
+    {
+      "fieldname": "remarks",
+      "fieldtype": "Text Editor",
+      "label": "Remarks"
+    }
+  ],
+  "modified": "2026-05-03",
+  "modified_by": "Administrator",
+  "module": "Suriname HR/Payroll",
+  "name": "Suriname Payroll Entry",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "HR Manager",
+      "share": 1,
+      "submit": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "title_field": "name"
+}

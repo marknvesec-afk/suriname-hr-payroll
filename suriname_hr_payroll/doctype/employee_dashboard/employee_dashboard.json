@@ -1,0 +1,180 @@
+{
+  "autoname": "format:SURINDASH-{MM}-{YYYY}-{employee}-{#####}",
+  "creation": "2026-05-03",
+  "doctype": "DocType",
+  "document_type": "Document",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "employee",
+    "employee_name",
+    "column_break_4",
+    "designation",
+    "department",
+    "section_break_payroll",
+    "current_month",
+    "current_year",
+    "gross_salary",
+    "column_break_payroll2",
+    "income_tax",
+    "social_security",
+    "net_pay",
+    "section_break_leave",
+    "annual_leave_balance",
+    "sick_leave_balance",
+    "maternity_leave_balance",
+    "column_break_leave2",
+    "leaves_taken_this_year",
+    "leaves_pending_approval",
+    "section_break_documents",
+    "recent_payslips",
+    "leave_history"
+  ],
+  "fields": [
+    {
+      "fieldname": "employee",
+      "fieldtype": "Link",
+      "label": "Employee",
+      "options": "Employee",
+      "reqd": 1,
+      "read_only": 1
+    },
+    {
+      "fieldname": "employee_name",
+      "fieldtype": "Data",
+      "label": "Employee Name",
+      "read_only": 1
+    },
+    {
+      "fieldname": "column_break_4",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "designation",
+      "fieldtype": "Link",
+      "label": "Designation",
+      "options": "Designation",
+      "read_only": 1
+    },
+    {
+      "fieldname": "department",
+      "fieldtype": "Link",
+      "label": "Department",
+      "options": "Department",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_break_payroll",
+      "fieldtype": "Section Break",
+      "label": "Payroll Information"
+    },
+    {
+      "fieldname": "current_month",
+      "fieldtype": "Select",
+      "label": "Current Month",
+      "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember",
+      "read_only": 1
+    },
+    {
+      "fieldname": "current_year",
+      "fieldtype": "Int",
+      "label": "Current Year",
+      "read_only": 1
+    },
+    {
+      "fieldname": "gross_salary",
+      "fieldtype": "Currency",
+      "label": "Gross Salary (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "column_break_payroll2",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "income_tax",
+      "fieldtype": "Currency",
+      "label": "Income Tax (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "social_security",
+      "fieldtype": "Currency",
+      "label": "Social Security (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "net_pay",
+      "fieldtype": "Currency",
+      "label": "Net Pay (SRD)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_break_leave",
+      "fieldtype": "Section Break",
+      "label": "Leave Balance"
+    },
+    {
+      "fieldname": "annual_leave_balance",
+      "fieldtype": "Int",
+      "label": "Annual Leave Balance (Days)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "sick_leave_balance",
+      "fieldtype": "Int",
+      "label": "Sick Leave Balance (Days)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "maternity_leave_balance",
+      "fieldtype": "Int",
+      "label": "Maternity Leave Balance (Days)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "column_break_leave2",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "leaves_taken_this_year",
+      "fieldtype": "Int",
+      "label": "Leaves Taken This Year",
+      "read_only": 1
+    },
+    {
+      "fieldname": "leaves_pending_approval",
+      "fieldtype": "Int",
+      "label": "Leaves Pending Approval",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_break_documents",
+      "fieldtype": "Section Break",
+      "label": "Documents"
+    },
+    {
+      "fieldname": "recent_payslips",
+      "fieldtype": "HTML",
+      "label": "Recent Payslips"
+    },
+    {
+      "fieldname": "leave_history",
+      "fieldtype": "HTML",
+      "label": "Leave History"
+    }
+  ],
+  "modified": "2026-05-03",
+  "modified_by": "Administrator",
+  "module": "Suriname HR/Payroll",
+  "name": "Employee Dashboard",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "read": 1,
+      "role": "Employee"
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}
